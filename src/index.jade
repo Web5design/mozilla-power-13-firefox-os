@@ -56,6 +56,77 @@ html
           li Take the best out of your platform
           li And file bugs if you think something should be different!
 
+      section
+        h1.bullet Steps to success
+        ol
+          li Write your web app
+          li Upload to your server or to the marketplace
+          li Done
+
+      section
+        h1.bullet Basic app structure
+        ul
+          li Front end code
+          li Plus a manifest
+
+      section
+        h1.bullet The manifest
+        h2.bullet JSON file with metadata about the app
+        ul
+          li app name, icons, ...
+          li what is the entry point? (e.g. <tt>index.html</tt>)
+          li what special features does the app require? (i.e. permissions, optional)
+
+      section
+        h1.bullet Manifest example
+        code.language-javascript
+          pre.
+            {
+              "name": "My App",
+              "description": "This is a fantastic app",
+              "launch_path": "/",
+              "icons": { "128": "/img/icon-128.png" },
+              "developer": {
+                "name": "Your name or organization",
+                "url": "http://your-homepage-here.org"
+              }
+            }
+
+      section
+        h1.bullet Three types of apps
+        h2.bullet According to the amount of privileges they require
+        ol
+          li Hosted
+          li Privileged
+          li Certified
+
+      section
+        h1.bullet Less privileges === less access to sensitive APIs
+        h2.bullet We care a hell of a lot about user privacy and security
+
+
+      section
+        h1.bullet App types: Hosted
+        ul
+          li stored on your server
+          li easy to upgrade
+          li the least privileges
+        p <a href="https://developer.mozilla.org/en-US/Apps/Developing/App_permissions?redirectlocale=en-US&redirectslug=Web%2FApps%2FApp_permissions">full list of permissions vs app types</a>
+
+      section
+        h1.bullet App types: Privileged
+        ul
+          li reviewed by the Marketplace
+          li packaged
+          li signed
+
+      section
+        h1.bullet App types: Certified
+        ul
+          li part of the OS
+          li only for Mozilla and partners
+
+
       
       section
         h1 Thank you!
